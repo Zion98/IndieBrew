@@ -8,7 +8,7 @@ const Footer = () => {
         <Row>
           <Col lg={4} sm={12}>
             <div className="first-box">
-              <h1>IndieBrew</h1>
+              <h1 className="title-footer">IndieBrew</h1>
               <p>
                 With IndieBrew, get personal feeds from resources all around the
                 web, including Reddit, HackerNews, and much more.
@@ -61,6 +61,10 @@ const FooterStyle = styled.div`
   padding: 3rem 0rem;
   color: #4f4f4f;
   background: #fbf8f3;
+
+  .title-footer {
+    margin-top: 0 !important;
+  }
   h1,
   h2 {
     font-size: 1rem;
@@ -72,12 +76,14 @@ const FooterStyle = styled.div`
     font-weight: 300;
   }
 
-  /* @media only screen and (max-width: 999px) {
+  @media only screen and (max-width: 999px) {
     padding: 2rem 0rem;
-  }
 
-  @media screen and (max-width: 768px) {
-    padding: 2rem;
-  } */
+    h1,
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
 `;
 export default Footer;
