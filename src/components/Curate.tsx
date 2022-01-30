@@ -81,6 +81,10 @@ const CurateSection = styled.div`
     .curate-content {
       max-width: 100%;
     }
+
+    .curateImage {
+      max-width: 100%;
+    }
   }
 `;
 
